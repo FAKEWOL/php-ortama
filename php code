@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+
+        $sayi1 = 100;
+        $sayi2 = 0;
+        $performans= 100;
+        $ortalma;
+   
+        $ortalma = (($sayi1+$sayi2+$performans) /3);
+        if($ortalma > 0 and $ortalma < 24 ){
+            $durum = "Sıfır";
+        }
+        elseif($ortalma > 25 and $ortalma < 44 ){
+            $durum = "Bir";
+        }
+        elseif($ortalma > 45 and $ortalma < 54 ){
+            $durum = "İki";
+        }
+        elseif($ortalma > 55 and $ortalma < 69 ){
+            $durum = "Üç";
+        }
+        elseif($ortalma > 70 and $ortalma < 84 ){
+            $durum = "Dört";
+        }
+        else
+        $durum = "Beş";
+        echo $durum;
+    ?>
+</body>
+</html>
